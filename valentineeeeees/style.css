@@ -1,0 +1,38 @@
+body{
+    background-color: hwb(321 87% 0%);
+    color: lch(37.44% 39.08 351.93);
+    text-align: center;
+}
+
+h1{
+    border: 1px, solid, hsl(0, 0%, 0%);
+}
+
+output{
+    color:  hwb(327 19% 53%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+}
+
+#resultado{
+    background-color:  hwb(321 87% 0%);
+}
+
+button{
+    background-color: rgb(255, 136, 196);
+    color: lab(22.05% 28.21 -6.49);
+    padding: 6px;
+    border: 1px, solid,hsl(0, 0%, 0%);
+    font-size: large;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#botao1{
+    background-color:rgb(255, 136, 196);
+}
+#botao1:hover{
+    background-color: #c06b95;
+}
