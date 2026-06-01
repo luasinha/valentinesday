@@ -1,6 +1,6 @@
 
 function abrirMensagem() {
-  alert('Nosso destino sempre estará conectado ❤️');
+  alert('Eu te amo meu amor !!!!!!!!!!');
 }
 
 const mensagens = [
