@@ -98,7 +98,9 @@ body {
 .navbar a:hover {
   color: #ff9bd2;
 }
-
+.navbar audio {
+  width: 220px;
+}
 /* geral */
 
 section {
@@ -110,7 +112,6 @@ section h2 {
 
   font-size: 45px;
   margin-bottom: 50px;
-
   color: #ffd4f2;
 }
 
@@ -119,10 +120,8 @@ section h2 {
 button {
   margin-top: 30px;
   padding: 15px 35px;
-
   border: none;
   border-radius: 50px;
-
   background: linear-gradient(
     45deg,
     #ff5ebc,
@@ -131,11 +130,8 @@ button {
 
   color: white;
   font-size: 18px;
-
   cursor: pointer;
-
   transition: .4s;
-
   box-shadow:
     0 0 20px rgba(255,255,255,.3);
 }
@@ -144,37 +140,18 @@ button:hover {
   transform: scale(1.08);
 }
 
-/* sobre */
-
-.sobre {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 50px;
-
-  text-align: center;
-}
-
-.sobre p {
-  margin-top: 20px;
-  line-height: 1.8;
-}
-
 /* eternal */
 
-.filme {
+.eternal {
   text-align: center;
 }
-
-.filme img {
-  width: 600px;
+.eternal img {
+  width: 1200px;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 20px;
 }
-
 .legenda {
   margin-top: 15px;
   font-size: 20px;
@@ -185,21 +162,16 @@ button:hover {
 
 .cards {
   display: grid;
-
   grid-template-columns:
-    repeat(auto-fit, minmax(280px, 1fr));
-
+  repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
 .card {
   background: rgba(255,255,255,.08);
-
   border-radius: 20px;
   overflow: hidden;
-
   backdrop-filter: blur(10px);
-
   transition: .4s;
 }
 
@@ -227,17 +199,20 @@ button:hover {
 }
 
 /* galeria */
+.imagens{
+  text-align: center;
+  font-size: x-large;
+}
 
-.galeria-grid {
+.imagens-grid {
   display: grid;
-
   grid-template-columns:
-    repeat(auto-fit, minmax(220px, 1fr));
-
+  repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center;
   gap: 20px;
 }
 
-.galeria-grid img {
+.imagens-grid img {
   width: 100%;
   height: 300px;
 
@@ -248,7 +223,7 @@ button:hover {
   transition: .4s;
 }
 
-.galeria-grid img:hover {
+.imagens-grid img:hover {
   transform: scale(1.05);
 }
 
@@ -259,7 +234,7 @@ button:hover {
 }
 
 .mensagem-final p {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 /* footer */
@@ -276,10 +251,6 @@ footer {
 
 @media (max-width: 900px) {
 
-  .sobre {
-    flex-direction: column;
-  }
-
   .hero-content h2 {
     font-size: 45px;
   }
@@ -292,8 +263,8 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
-
-  .timeline {
-    padding-left: 15px;
+  .eternal img {
+    width: 100%;
   }
+
 }
