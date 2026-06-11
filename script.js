@@ -32,32 +32,24 @@ limparPagina.forEach(function(paginas){
 })
 
 document.getElementById("inicio").classList.add("ativa")
-
 }
+
 function sobre(){
 limparPagina.forEach(function(paginas){
   paginas.classList.remove("ativa")
 })
 
 document.getElementById("sobre").classList.add("ativa")
-
 }
-function nos(){
-limparPagina.forEach(function(paginas){
-  paginas.classList.remove("ativa")
-})
 
-document.getElementById("nos").classList.add("ativa")
-
-}
 function galeria(){
 limparPagina.forEach(function(paginas){
   paginas.classList.remove("ativa")
 })
 
 document.getElementById("galeria").classList.add("ativa")
-
 }
+
 function mensagem(){
 limparPagina.forEach(function(paginas){
   paginas.classList.remove("ativa")

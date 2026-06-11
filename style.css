@@ -154,13 +154,14 @@ font-size: 22px;
 }
 
 
-/* nos */
+/* galeria */
 
 .fotos{
 display: grid;
 grid-template-columns:
 repeat(auto-fit, minmax(280px, 1fr));
 gap: 30px;
+margin-bottom: 80px;
 }
 .foto{
 background:rgba(255,255,255,.08);
@@ -184,6 +185,7 @@ object-fit: cover;
 .eternal{
 text-align: center;
 margin-top: 50px;
+margin-bottom: 80px;
 }
 .eternal img{
 width: 100%;
@@ -201,8 +203,6 @@ margin: 20px auto 0;
 line-height: 1.6;
 }
 
-
-/* galeria */
 
 #galeria h3{
 text-align: center;
@@ -356,24 +356,4 @@ to{
 opacity:0;
 transform: translateY(-20px) scale(0);
 }
-}
-
-
-/* celular etc */
-
-@media (max-width: 900px) {
-
-.hero-content h2 {
-font-size: 45px;
-}
-
-.hero-content p {
-font-size: 18px;
-}
-
-.navbar{
-flex-direction: column;
-gap: 20px;
-}
-
 }
