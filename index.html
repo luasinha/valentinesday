@@ -1,108 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eternal</title>
+  <title>valentines</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="stars"></div>
-<header class="hero">
+  <div id="estrelas"></div>
+
   <nav class="navbar">
-    <audio controls loop>
-   <source src="musica.mp3" type="audio/mpeg">
+
+    <audio id="music" loop>
+      <source src="musica.mp3" type="audio/mpeg">
     </audio>
-    <h1>in the mood of love :3</h1>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#card">Nós</a></li>
-      <li><a href="#imagens">Galeria</a></li>
-      <li><a href="#mensagens">!!</a></li>
-    </ul>
+
+    <button id="musicBtn" onclick="tocarMusica()">
+      ᯤ Spotify
+    </button>
+
+      <div id="menu">
+       <button onclick="inicio()" class="botaoNav"> inicio </button>
+       <button onclick="sobre()" class="botaoNav"> sobre </button>
+       <button onclick="nos()" class="botaoNav"> nós </button>
+       <button onclick="galeria()" class="botaoNav"> galeria </button>
+       <button onclick="mensagem()" class="botaoNav"> !! </button>
+      </div>
+
   </nav>
 
-<div class="hero-content">
-    <h2> My dear consort, eternal love. </h2>
-     <p> ⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹  </p>
-     <p>Em homenagem ao nosso amor, meu amor !!</p>
-     <p>feliz dia dos namorados</p>
+<section id="inicio" class="tela ativa">
+
+    <div class="hero-content">
+      
+      <div class="hero-glow"></div>
+      
+      <h2>𝘔𝘺 𝘥𝘦𝘢𝘳 𝘤𝘰𝘯𝘴𝘰𝘳𝘵, 𝘦𝘵𝘦𝘳𝘯𝘢𝘭 𝘭𝘰𝘷𝘦.</h2>
+      
+      <div class="textoFlutuante">
+        ⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹
+      </div>
+      
+      <p>𝙀𝙢 𝙝𝙤𝙢𝙚𝙣𝙖𝙜𝙚𝙢 𝙖𝙤 𝙣𝙤𝙨𝙨𝙤 𝙖𝙢𝙤𝙧, 𝙢𝙚𝙪 𝙖𝙢𝙤𝙧 !!</p>
+      <p>𝒇𝒆𝒍𝒊𝒛 𝒅𝒊𝒂 𝒅𝒐𝒔 𝒏𝒂𝒎𝒐𝒓𝒂𝒅𝒐𝒔 :3</p>
+      
       <button onclick="abrirMensagem()">
-      ˚ʚ♡ɞ˚
+        ˚ʚ♡ɞ˚
       </button>
+      
     </div>
-</header>
+  </section>
+    
+<section id="sobre" class="tela">
+    <div class="sobreTela">
 
-<section id="sobre" class="eternal">
-  <div class="texto">
-     <h3> </h3>
-     <p> </p>
+<p class="texto">
+♡ ˚｡⋆୨୧˚────── · · ୨୧ · · ──────˚୨୧⋆｡˚ ♡
 
-  <img src="eternalsunshine.webp" alt="eternal">
+<br><br>
 
-     <p class="legenda">
-     “I could die right now, Clem. I’m just… happy.”
-     </p>
+Desde o dia em que te vi pela primeira vez, eu soube que iria me apaixonar por você.
+
+<br><br>
+
+Seu jeito, seu cabelo, seu cheiro e seus olhos — principalmente seus olhos — conseguem hipnotizar qualquer pessoa com facilidade. Seu jeito carismático e delicado, sua forma de pensar e de falar, seu estilo, sua voz. Tudo em você é tão único que é impossível não te notar.
+
+<br><br>
+
+Senti um desejo incontrolável de querer saber cada vez mais sobre você, como se fosse um vício. 
+Você é tão gentil e delicada, sempre transmite amor em tudo que faz.
+Você é a pessoa mais incrível que eu já conheci e, graças a você, consegui encontrar uma parte de mim que jamais saberia que existia.
+
+<br><br>
+
+Eu te amo. Eu te amo. Eu te amo. Eu te amo.
+</p>
+
+ </div>
+  </section>
+
+<section id="nos" class="tela">
+
+  <div class="eternal">
+
+    <img src="eternalsunshine.webp">
+      <p class="legenda">
+        “I could die right now, Clem. I’m just… happy.”
+      </p>
+
+    </div>
+<br><br>
+<br><br>
+<br><br>
+    <div class="fotos">
+      
+      <div class="foto">
+        <img src="eternalsunshine2.jpg">
+      </div>
+      
+      <div class="foto">
+        <img src="eternalsunshine3.gif">
+      </div>
+
+      <div class="foto">
+        <img src="eternalsunshine4.jpg">
+      </div>
+    </div>
+
+  </section>
+
+ <section id="galeria" class="tela">
+
+    <div class="fotosgaleria">
+      <div class="fotoGrandeGaleria">
+        <img src="wish.jpg">
+      </div>
+    </div>
+
+<br><br>
+
+<div class="musicaFoto">
+<p class="letraMusica">
+"I'd love to touch the sky tonight<br>
+I'd love to touch the sky<br>
+So take me in your arms<br>
+And lift me like a child<br>
+And hold me up so high<br>
+And never let me go<br>
+Take me<br>
+Take me in your arms tonight
+<br><br>
+Hold me<br>
+Hold me up so high<br>
+And never let me down<br>
+Hold me<br>
+Hold me up so high<br>
+To touch the sky<br>
+Just one more time
+<br><br>
+Take me in your arms tonight<br>
+Take me in your arms<br>
+Just one more time<br>
+Just one more time<br>
+Just one more time"<br>
+<br> - one more time, The Cure.
+<br><br>
+</p>
+
+  <div class="fotoGrandeGaleria2">
+    <img src="whatislove1.jpg">
   </div>
-</section>
 
-<section id="card" class="cards-section">
-    <h4></h4>
-  <div class="cards">
-  <div class="card">
-    <img src="eternalsunshine2.jpg">
-
-     <div class="card-content">
-      <h5></h5>
-      <p> </p>
-     </div>
-  </div>
-
-<div class="card">
-    <img src="eternalsunshine3.gif">
-  <div class="card-content">
-      <h6></h6>
-      <p></p>
-  </div>
 </div>
 
-<div class="card">
-    <img src="eternalsunshine4.jpg">
-  <div class="card-content">
-      <h6></h6>
-      <p></p>
-  </div>
-</div>
+<br><br>
 
-</div>
-</section>
+    <div class="fotosgaleria">
+      
+      <div class="fotogaleria">
+        <img src="shoes.jpg">
+      </div>
+      
+      <div class="fotogaleria">
+        <img src="thenotebook.jpg">
+      </div>
 
-<section id="imagens" class="imagens">
-   <h3>love space ♡ .ᐟ</h3>
+      <div class="fotogaleria">
+        <img src="eyes.jpg">
+      </div>
 
-<div class="imagens-grid">
-    <img src="cervo.jpg">
-    <img src="swan.png">
-    <img src="horse2.jpg">
-</div>
-</section>
+    </div>
 
-<section id="mensagens" class="mensagem-final">
-    <h2></h2>
-    <p id="textoMensagem">
+<br><br>
+
+    <p class="legenda">
+    "Então, não será fácil. Será muito difícil. Nós teremos que trabalhar nisso todos os dias, mas eu quero fazer isso porque eu quero você. Eu quero tudo de você, para sempre, eu e você, todos os dias."
+  </p>
+
+<br><br>
+<br><br>
+<br><br>
+
+    <h3>love space ♡ .ᐟ</h3>
+    <div class="galeria">
+      <img src="cervo.jpg">
+      <img src="swan.png">
+      <img src="horse2.jpg">
+    </div>
+
+<br><br>
+
+    <div class="fotosgaleria">
+      <div class="fotoGrandeGaleria">
+        <img src="coelhos.gif">
+      </div>
+    </div>
+
+<br><br>
+
+    <div class="galeria">
+      <img src="corujas.jpg">
+      <img src="gatocervo.jpg">
+      <img src="lontra.jpg">
+    </div>
+
+
+  </section>
+
+<section id="mensagem" class="tela">
+
+    <p id="mensagemFofa">
       Clique para uma surpresinha :3
     </p>
 
-  <button onclick="trocarMensagem()">
-    ｡ﾟ•┈୨♡୧┈•ﾟ｡
-  </button>
-</section>
+    <button onclick="mensagemSurpresa()">
+      ｡ﾟ•┈୨♡୧┈•ﾟ｡
+    </button>
 
-<footer>
-  <p>feito com muitissimo amor, luanna.</p>
-</footer>
+  </section>
+
+  <footer>
+    <p>feito com muitissimo amor, luanna.</p>
+  </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
